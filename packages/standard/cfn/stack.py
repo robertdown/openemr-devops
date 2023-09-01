@@ -14,7 +14,7 @@ ref_region = Ref('AWS::Region')
 ref_stack_name = Ref('AWS::StackName')
 ref_account = Ref('AWS::AccountId')
 
-docker_version = ':7.0.0'
+docker_version = ':7.0.1'
 
 
 def setInputs(t, args):
@@ -365,63 +365,63 @@ def setRecoveryInputs(t, args):
 def setMappings(t, args):
     t.add_mapping('RegionData', {
         "ap-northeast-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-2086695f"
         },
         "ap-northeast-2": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-d04ce5be"
         },
         "ap-south-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-d2bd9dbd"
         },
         "ap-southeast-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-2fb49f53"
         },
         "ap-southeast-2": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-2a459148"
         },
         "ca-central-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-8de666e9"
         },
         "eu-central-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-b105265a"
         },
         "eu-west-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-dd99b2a4"
         },
         "eu-west-2": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-96da38f1"
         },
         "eu-west-3": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-6c902111"
         },
         "sa-east-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-56e5b73a"
         },
         "us-east-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-07124126f9225d337"
         },
         "us-east-2": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-f97f429c"
         },
         "us-west-1": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-f5d6c995"
         },
         "us-west-2": {
-            "MySQLVersion": "5.7.33",
+            "MySQLVersion": "5.7.41",
             "OpenEMRMktPlaceAMI": "ami-8b4d3af3"
         }
     })
@@ -1037,7 +1037,7 @@ args = parser.parse_args()
 t = Template()
 
 t.add_version('2010-09-09')
-descString = 'OpenEMR Cloud Standard v7.0.0 cloud deployment'
+descString = 'OpenEMR Cloud Standard v7.0.1 cloud deployment'
 if (args.dev):
     descString += ' [developer]'
 if (args.recovery):
